@@ -176,7 +176,7 @@ body {
 }
 
 .bottom-text p {
-    line-height: 5px;
+    line-height: 10px;
 }
 
 .hero .hero-text .hero-text-content .resume-button {
@@ -184,7 +184,9 @@ body {
     width: 140px;
     font-size: 1rem;
     display: flex;
+    align-items: center;
     justify-content: center;
+    text-align: center;
     flex-wrap: wrap;
     background-color: rgb(1, 38, 49);
     border-radius: 20px;

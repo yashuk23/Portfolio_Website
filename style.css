@@ -1,5 +1,4 @@
-body 
-{
+body {
     margin: 0;
     min-height: 100vh;
     background:
@@ -9,8 +8,7 @@ body
     color: #ffffff;
 }
 
-.navbar 
-{
+.navbar {
     position: sticky;
     top: 0px;
     z-index: 1000;
@@ -29,8 +27,7 @@ body
     padding: 5px 0 0 0;
 }
 
-.navbar-name 
-{
+.navbar-name {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -39,23 +36,20 @@ body
     background-color: #070922;
 }
 
-.navbar-name h1 
-{
+.navbar-name h1 {
     font-weight: bolder;
     font-display: fallback;
     font-style: unset;
     color: aliceblue;
 }
 
-.navbar-name h1:hover 
-{
+.navbar-name h1:hover {
     cursor: pointer;
     color: rgb(243, 133, 60);
     transform: scale(1.05);
 }
 
-.navbar-menu 
-{
+.navbar-menu {
     display: flex;
     justify-content: center;
     background-color: #070922;
@@ -68,8 +62,7 @@ body
 
 }
 
-.navbar-menu a 
-{
+.navbar-menu a {
     font-size: x-large;
     font-weight: bolder;
     font-display: fallback;
@@ -78,15 +71,13 @@ body
     text-decoration: none;
 }
 
-.navbar-menu a:hover 
-{
+.navbar-menu a:hover {
     cursor: pointer;
     color: rgb(238, 57, 11);
     transform: scale(1.05);
 }
 
-.hero 
-{
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +88,7 @@ body
     margin-top: 60px;
 }
 
-.hero-img 
-{
+.hero-img {
     height: 250px;
     width: 250px;
     border-radius: 100%;
@@ -109,22 +99,19 @@ body
     background-repeat: no-repeat;
 }
 
-.hero-img:hover 
-{
+.hero-img:hover {
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
     transform: scale(1.05);
     cursor: pointer;
     transition-delay: 1ms;
 }
 
-.hero-text 
-{
+.hero-text {
     height: 250px;
     width: 350px;
 }
 
-.hero-text .hero-text-content 
-{
+.hero-text .hero-text-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,91 +120,77 @@ body
     padding: 0 0 0 10px;
 }
 
-.hero-text .hero-text-content:hover 
-{
+.hero-text .hero-text-content:hover {
     transform: scale(1.05);
-    cursor:none;
+    cursor: none;
     color: rgb(174, 250, 244);
 }
 
-.hero-text .hero-text-content .yash 
-{
+.hero-text .hero-text-content .yash {
     font-size: 4rem;
     font-weight: bold;
     line-height: 1;
     margin: 5px 0 15px 0;
-
-
-    color: #dcdada;
     text-transform: uppercase;
+    font-size: 64px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00f2ff, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    transition: color 0.3s ease;
+
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
 
     text-shadow:
+        0 0 5px #fff,
+        0 0 18px #00f2ff,
+        0 0 18px #00f2ff,
+        0 0 38px #4facfe,
+        0 0 79px #4facfe;
+
+    transition: all 0.1s ease;
+}
+
+.hero-text .hero-text-content .yash:hover {
+    text-shadow:
         0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #0fa,
-        0 0 82px #0fa,
-        0 0 92px #0fa,
-        0 0 102px #0fa,
-        0 0 151px #0fa;
-
-    animation: neon-pulsate 1.5s infinite alternate;
+        0 0 15px #00f2ff,
+        0 0 35px #00f2ff,
+        0 0 75px #4facfe,
+        0 0 100px #4facfe;
 }
 
-@keyframes neon-pulsate
-{
-    100% 
-    {
-        text-shadow:
-            0 0 4px #fff,
-            0 0 11px #fff,
-            0 0 19px #fff,
-            0 0 40px #0fa,
-            0 0 80px #0fa,
-            0 0 90px #0fa,
-            0 0 100px #0fa,
-            0 0 150px #0fa;
-    }
 
-    0% 
-    {
-        text-shadow:
-            0 0 2px #fff,
-            0 0 4px #fff,
-            0 0 6px #fff,
-            0 0 10px #0fa,
-            0 0 45px #0fa,
-            0 0 55px #0fa,
-            0 0 70px #0fa,
-            0 0 80px #0fa;
-    }
-}
-
-.hero .hero-text .hero-text-content .bottom-text 
-{
+.hero .hero-text .hero-text-content .bottom-text {
     font-size: 1.3rem;
     max-width: 300px;
     line-height: 1.4;
 }
-.bottom-text{
+
+.bottom-text {
     text-align: center;
 }
-.bottom-text p{
+
+.bottom-text p {
     line-height: 5px;
 }
-.hero .hero-text .hero-text-content .resume-button
-{
-    min-height: 5vh;
-    min-width: 130px;
-    font-size:1rem;
-    text-align: center;
-    margin-top: 3px;
-    padding:10px 0 0 6px;
+
+.hero .hero-text .hero-text-content .resume-button {
+    max-height: 9vh;
+    width: 140px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(1, 38, 49);
     border-radius: 20px;
 }
-.hero .hero-text .hero-text-content .resume-button:hover
-{
+
+.hero .hero-text .hero-text-content .resume-button:hover {
     transform: none;
     color: white;
     cursor: pointer;

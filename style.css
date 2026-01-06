@@ -6,12 +6,16 @@ body {
         radial-gradient(circle at bottom right, #020617, transparent 45%),
         linear-gradient(135deg, #020617, #040b1d);
     color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
     position: sticky;
     top: 0px;
     z-index: 1000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0;
     max-height: 35vh;
     background:
@@ -40,12 +44,12 @@ body {
     font-weight: bolder;
     font-display: fallback;
     font-style: unset;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 
 .navbar-name h1:hover {
     cursor: pointer;
-    color: rgb(243, 133, 60);
+    color: white;
     transform: scale(1.05);
 }
 
@@ -55,11 +59,10 @@ body {
     background-color: #070922;
     align-items: center;
     flex-wrap: wrap;
-    max-height: 70px;
+    max-height: 200px;
     padding: 10px 0 0 0;
     min-width: 70%;
-    gap: 50px;
-    backface-visibility: hidden;
+    gap: 30px;
 }
 
 .navbar-menu a {
@@ -67,13 +70,15 @@ body {
     font-weight: bolder;
     font-display: fallback;
     font-style: unset;
-    color: aliceblue;
+    color: rgb(111, 241, 236);
     text-decoration: none;
 }
 
+
+
 .navbar-menu a:hover {
     cursor: pointer;
-    color: rgb(238, 57, 11);
+    color: aliceblue;
     transform: scale(1.05);
 }
 
@@ -85,7 +90,7 @@ body {
     gap: 40px;
     min-height: 65vh;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .hero-img {
@@ -93,6 +98,7 @@ body {
     width: 250px;
     border-radius: 100%;
     padding: 2%;
+    border: 3px solid rgb(120, 242, 232);
     background-image: url("./Yashimg.jpeg");
     background-size: cover;
     background-position: center;
@@ -100,7 +106,7 @@ body {
 }
 
 .hero-img:hover {
-    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(126, 245, 217);
     transform: scale(1.05);
     cursor: pointer;
     transition-delay: 1ms;
@@ -123,7 +129,7 @@ body {
 .hero-text .hero-text-content:hover {
     transform: scale(1.05);
     cursor: none;
-    color: rgb(174, 250, 244);
+    color: rgb(255, 255, 255);
 }
 
 .hero-text .hero-text-content .yash {
@@ -177,7 +183,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -188,20 +194,83 @@ body {
 }
 
 .hero .hero-text .hero-text-content .resume-button {
-    max-height: 9vh;
+    max-height: 10vh;
     width: 140px;
     font-size: 1rem;
+    padding: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     background-color: rgb(1, 38, 49);
-    border-radius: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(142, 247, 249);
 }
 
 .hero .hero-text .hero-text-content .resume-button:hover {
     transform: none;
     color: white;
     cursor: pointer;
+    background: #36e3e3;
+    background: linear-gradient(0deg, rgba(54, 227, 227, 1) 0%, rgba(214, 174, 86, 1) 100%);
+    color: #020617;
+}
+
+.skills {
+    margin-top: 50px;
+}
+
+.skills .skills-name h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-display: fallback;
+    font-style: unset;
+    color: rgb(111, 241, 236);
+    text-align: center;
+    max-height: 50%;
+}
+
+.skills .skills-name h1:hover {
+
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.skills .skills-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.skills .skills-btns button {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+
+    background:
+        radial-gradient(circle at top left, #071424, transparent 40%),
+        radial-gradient(circle at bottom right, hwb(229 1% 91%), transparent 45%),
+        linear-gradient(135deg, #020617, #040b1d);
+
+    color: white;
+    border: 2px solid rgb(9, 238, 200)
+}
+
+.skills .skills-btns button:hover {
+    box-shadow: 2px 2px 8px #4facfe;
+    transform: scale(1.05);
+    transition-delay: 1ms;
+    background: #4d47a1;
+    background: linear-gradient(90deg, rgba(77, 71, 161, 1) 0%, rgba(255, 201, 201, 1) 51%, rgba(42, 180, 201, 1) 100%);
+    color: #020617;
 }

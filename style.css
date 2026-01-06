@@ -182,6 +182,7 @@ body {
 }
 
 .bottom-text p {
+    padding: 2px;
     line-height: 0.8;
     font-size: 1rem;
 }

@@ -182,7 +182,8 @@ body {
 }
 
 .bottom-text p {
-    line-height: 0% ;
+    line-height: 0.8;
+    font-size: 1rem;
 }
 
 .hero .hero-text .hero-text-content .resume-button {

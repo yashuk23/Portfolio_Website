@@ -173,10 +173,14 @@ body {
 
 .bottom-text {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
 }
 
 .bottom-text p {
-    line-height: 20px;
+    line-height: 0% ;
 }
 
 .hero .hero-text .hero-text-content .resume-button {

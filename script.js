@@ -21,3 +21,30 @@ gfg.addEventListener("click",()=>
 {
     window.open("https://www.geeksforgeeks.org/profile/yashuk23?tab=activity");
 })
+
+let weatherApp_github=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p1-github');
+weatherApp_github.addEventListener("click",()=>
+{
+    window.open("https://github.com/yashuk23/Weather_Widget_AppReact");
+})
+
+
+let weatherApp_demo=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p1-livedemo');
+weatherApp_demo.addEventListener("click",()=>
+{
+    window.open("https://yashuk23.github.io/Weather_Widget_AppReact/");
+})
+
+
+let portfolio_github=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p2-github');
+portfolio_github.addEventListener("click",()=>
+{
+    window.open("https://github.com/yashuk23/Portfolio_Website");
+})
+
+
+let portfolio_demo=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p2-livedemo');
+portfolio_demo.addEventListener("click",()=>
+{
+    window.open("https://yashuk23.github.io/Portfolio_Website/");
+})

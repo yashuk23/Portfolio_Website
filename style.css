@@ -17,7 +17,7 @@ body {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0;
-    max-height: 35vh;
+    max-height: 25vh;
     background:
         radial-gradient(circle at top left, #071424, transparent 40%),
         radial-gradient(circle at bottom right, hwb(229 1% 91%), transparent 45%),
@@ -28,41 +28,50 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 25px;
-    padding: 5px 0 0 0;
+    padding: 0 0 0 0;
 }
 
 .navbar-name {
     display: flex;
-    justify-content: space-around;
+    align-items: first baseline;
+    justify-content: center;
     flex-wrap: wrap;
-    max-height: 70px;
-    min-width: 30%;
+    max-height: 50px;
+    width: 100%;
     background-color: #070922;
 }
 
-.navbar-name h1 {
+.navbar-name p {
     font-weight: bolder;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-display: fallback;
     font-style: unset;
-    color: rgb(255, 255, 255);
+    color: rgb(252, 252, 252);
 }
 
-.navbar-name h1:hover {
+.navbar-name p:hover {
     cursor: pointer;
-    color: white;
-    transform: scale(1.05);
+    color: rgb(228, 209, 209);
+    transform: scale(1.5);
 }
 
 .navbar-menu {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     background-color: #070922;
     align-items: center;
     flex-wrap: wrap;
     max-height: 200px;
     padding: 10px 0 0 0;
-    min-width: 70%;
-    gap: 30px;
+    min-width: 100%;
+    gap: 50px;
+}
+
+@media screen and (max-width: 755px) {
+  .navbar-menu{
+    gap: 20px;
+  }
 }
 
 .navbar-menu a {
@@ -189,11 +198,12 @@ body {
 
 .bottom-text p {
     padding: 2px;
-    line-height: 0.8;
+    line-height: 0.1px;
     font-size: 1rem;
 }
 
 .hero .hero-text .hero-text-content .resume-button {
+    margin-top: 5px;
     max-height: 10vh;
     width: 140px;
     font-size: 1rem;
@@ -203,18 +213,20 @@ body {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    background-color: rgb(1, 38, 49);
+    background:
+        radial-gradient(circle at top left, #071424, transparent 40%),
+        radial-gradient(circle at bottom right, hwb(229 1% 91%), transparent 45%),
+        linear-gradient(135deg, #020617, #040b1d);
     border-radius: 10px;
-    border: 2px solid rgb(142, 247, 249);
+    border: 3px solid rgb(142, 247, 249);
 }
 
 .hero .hero-text .hero-text-content .resume-button:hover {
     transform: none;
-    color: white;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     background: #36e3e3;
     background: linear-gradient(0deg, rgba(54, 227, 227, 1) 0%, rgba(214, 174, 86, 1) 100%);
-    color: #020617;
 }
 
 .skills {
@@ -273,4 +285,66 @@ body {
     background: #4d47a1;
     background: linear-gradient(90deg, rgba(77, 71, 161, 1) 0%, rgba(255, 201, 201, 1) 51%, rgba(42, 180, 201, 1) 100%);
     color: #020617;
+}
+.skills .coding-profiles
+{
+    margin-top: 50px;
+}
+.skills .coding-profiles p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-display: fallback;
+    font-style: unset;
+    color: rgb(111, 241, 236);
+    text-align: center;
+    max-height: 50%;
+}
+.skills .coding-profiles p:hover 
+{
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+.skills .coding-profiles .coding-profiles-btns 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.skills .coding-profiles .coding-profiles-btns button
+{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+
+    background:
+        radial-gradient(circle at top left, #071424, transparent 40%),
+        radial-gradient(circle at bottom right, hwb(229 1% 91%), transparent 45%),
+        linear-gradient(135deg, #020617, #040b1d);
+
+    color: white;
+    border: 2px solid rgb(9, 238, 200)
+}
+.skills .coding-profiles .coding-profiles-btns button:hover
+{
+    cursor: pointer;
+    box-shadow: 2px 2px 8px #4facfe;
+    transform: scale(1.05);
+    transition-delay: 1ms;
+    background: #4d47a1;
+    background: linear-gradient(90deg, rgba(77, 71, 161, 1) 0%, rgba(255, 201, 201, 1) 51%, rgba(42, 180, 201, 1) 100%);
+    color: #020617;
+}
+
+@media screen and (max-width: 680px) {
+    .skills .coding-profiles .coding-profiles-btns {
+    gap: 20px;
+  }
 }

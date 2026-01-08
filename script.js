@@ -10,12 +10,6 @@ leetcode.addEventListener("click",()=>
     window.open("https://leetcode.com/u/yashuk_23/");
 })
 
-let tuf=document.querySelector('.coding-profiles .coding-profiles-btns #tuf');
-tuf.addEventListener("click",()=>
-{
-    window.open("https://takeuforward.org/profile/yashuk23");
-})
-
 let gfg=document.querySelector('.coding-profiles .coding-profiles-btns #gfg');
 gfg.addEventListener("click",()=>
 {

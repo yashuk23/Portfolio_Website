@@ -48,3 +48,15 @@ portfolio_demo.addEventListener("click",()=>
 {
     window.open("https://yashuk23.github.io/Portfolio_Website/");
 })
+
+let brandpage_github=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p3-github');
+brandpage_github.addEventListener("click",()=>
+{
+    window.open("https://github.com/yashuk23/Brand_Page-Website-React");
+})
+
+let brandpage_demo=document.querySelector('.projects .project-box-container .project-box .project-box-btns #p3-livedemo');
+brandpage_demo.addEventListener("click",()=>
+{
+    window.open("https://yashuk23.github.io/Brand_Page-Website-React/");
+})

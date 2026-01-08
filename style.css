@@ -6,7 +6,7 @@ body {
         radial-gradient(circle at bottom right, #020617, transparent 45%),
         linear-gradient(135deg, #020617, #040b1d);
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -52,7 +52,9 @@ body {
 
 .navbar-name p:hover {
     cursor: pointer;
-    color: rgb(228, 209, 209);
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.5);
 }
 
@@ -87,7 +89,9 @@ body {
 
 .navbar-menu a:hover {
     cursor: pointer;
-    color: aliceblue;
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
@@ -249,7 +253,9 @@ body {
 
 .skills .skills-name h1:hover {
 
-    color: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
@@ -306,7 +312,9 @@ body {
 }
 
 .skills .coding-profiles p:hover {
-    color: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
@@ -370,7 +378,9 @@ body {
 }
 
 .projects .project-header:hover {
-    color: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
@@ -381,9 +391,9 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 @media screen and (max-width: 680px) {
-    .projects .project-box-container 
-    {
+    .projects .project-box-container {
         gap: 70px
     }
 }
@@ -427,9 +437,9 @@ body {
     background-color: #172033;
     backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    color:rgb(205, 253, 255);
+    color: rgb(205, 253, 255);
     font-size: 0.8rem;
-    font-weight:unset;
+    font-weight: unset;
     text-align: center;
 }
 
@@ -439,14 +449,13 @@ body {
     background-color: #172033;
     backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    color:rgb(205, 253, 255);
+    color: rgb(205, 253, 255);
     font-size: 0.8rem;
-    font-weight:unset;
+    font-weight: unset;
     text-align: center;
 }
 
-.projects .project-box-container .project-box .project-box-content p
-{
+.projects .project-box-container .project-box .project-box-content p {
     text-align: center;
     font-size: 1.2rem;
     color: #8ba4f6;
@@ -481,7 +490,88 @@ body {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     color: rgb(0, 6, 31)
 }
-.academics
-{
+
+.academics {
     margin-top: 200px;
+}
+
+.academics .academics-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-display: fallback;
+    font-style: unset;
+    color: rgb(111, 241, 236);
+    text-align: center;
+    max-height: 50%;
+}
+.academics .academics-header:hover
+{
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.academics .academics-name {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 80px;
+    font-weight: bolder;
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.academics .academic-year {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.academics .academic-year:hover {
+    transform: scale(1.05);
+}
+
+.academics .academics-name:hover {
+    transform: scale(1.05);
+}
+
+.academics .academics-header:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+
+.academics .academics-graph {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.academics .academics-graph .Semester {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 30px;
+    border-radius: 3px;
+    gap: 30px;
+    background-color: #1c273e;
+    width: 80%;
+    font-weight: bolder;
+    color: #70e7e7;
+}
+
+.academics .academics-graph .Semester:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px rgb(254, 143, 162);
+    color: rgb(230, 114, 219);
 }

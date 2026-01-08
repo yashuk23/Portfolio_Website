@@ -548,11 +548,13 @@ body
     color: rgb(0, 6, 31)
 }
 
-.academics {
+.academics 
+{
     margin-top: 250px;
 }
 
-.academics .academics-header {
+.academics .academics-header
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,7 +574,8 @@ body
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academics-name {
+.academics .academics-name 
+{
     font-size: 2rem;
     text-align: center;
     margin-top: 80px;
@@ -582,7 +585,8 @@ body
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year {
+.academics .academic-year 
+{
     font-size: 2rem;
     text-align: center;
     font-weight: bolder;
@@ -591,20 +595,24 @@ body
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year:hover {
+.academics .academic-year:hover 
+{
     transform: scale(1.05);
 }
 
-.academics .academics-name:hover {
+.academics .academics-name:hover 
+{
     transform: scale(1.05);
 }
 
-.academics .academics-header:hover {
+.academics .academics-header:hover 
+{
     color: rgb(255, 255, 255);
     transform: scale(1.05);
 }
 
-.academics .academics-graph {
+.academics .academics-graph 
+{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -613,7 +621,8 @@ body
     gap: 30px;
 }
 
-.academics .academics-graph .Semester {
+.academics .academics-graph .Semester 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -627,8 +636,13 @@ body
     color: #70e7e7;
 }
 
-.academics .academics-graph .Semester:hover {
+.academics .academics-graph .Semester:hover 
+{
     transform: scale(1.1);
     box-shadow: 1px 1px 10px rgb(254, 143, 162);
     color: rgb(230, 114, 219);
+}
+.contact-us
+{
+    margin-top: 250px;
 }

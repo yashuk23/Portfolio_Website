@@ -54,3 +54,9 @@ brandpage_demo.addEventListener("click",()=>
 {
     window.open("https://yashuk23.github.io/Brand_Page-Website-React/");
 })
+
+let connect_mail=documnet.querySelector('.lets-connect .email-section');
+connect_mail.addEventListener("click",()=>
+{
+    window.open("https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLrVpdNmkdHKlLpDtsfMvfcgkHJmNDhBmMmzLtbldWBlHZQxRLKfZGQPwWKGBhwVdNGlCN");
+})

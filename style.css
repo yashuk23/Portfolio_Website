@@ -82,7 +82,29 @@ body
         radial-gradient(circle at bottom right, rgba(2, 6, 23, 0.9), transparent 45%),
         linear-gradient(135deg, #020617, #040b1d);
 }
-
+.cyber-grid 
+{
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+@media screen and (max-width: 768px)
+{
+    .cyber-grid 
+    {
+        width: 150%;
+        height: 150%;
+        top: -25%;
+        left: -25%;
+        background-size: 40px 40px; 
+        transition: none !important; 
+    }
+    
+    .grid-container {
+        perspective: none; /* Simplifies rendering on mobile */
+    }
+}
 /*end*/
 
 body 

@@ -55,8 +55,26 @@ brandpage_demo.addEventListener("click",()=>
     window.open("https://yashuk23.github.io/Brand_Page-Website-React/");
 })
 
-let connect_mail=documnet.querySelector('.lets-connect .email-section');
+let connect_mail=document.querySelector('.lets-connect .email-section');
 connect_mail.addEventListener("click",()=>
 {
-    window.open("https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGLrVpdNmkdHKlLpDtsfMvfcgkHJmNDhBmMmzLtbldWBlHZQxRLKfZGQPwWKGBhwVdNGlCN");
+    window.open("https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPnTJHGqRPKGPksSQzngZdZmRpkPNTnCzcVMtpKbMLnVwFSCGMmtcWxngVJqDTJFRl");
+})
+
+let connect_github=document.querySelector('#github');
+connect_github.addEventListener("click",()=>
+{
+    window.open("https://github.com/yashuk23");
+})
+
+let connect_linkedin=document.querySelector('#linkedin');
+connect_linkedin.addEventListener("click",()=>
+{
+    window.open("https://www.linkedin.com/in/yashuk23");
+})
+
+let message=document.querySelector('    .lets-connect .email-section');
+message.addEventListener("click",()=>
+{
+    window.open("https://mail.google.com/mail/u/0/#inbox?compose=VpCqJbPnTJHGqRPKGPksSQzngZdZmRpkPNTnCzcVMtpKbMLnVwFSCGMmtcWxngVJqDTJFRl")
 })

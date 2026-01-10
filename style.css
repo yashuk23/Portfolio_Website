@@ -637,19 +637,24 @@ body
     align-items: center;
     flex-wrap: wrap;
     height: 30px;
-    border-radius: 3px;
+    border-radius: 6px;
     gap: 30px;
-    background-color: #1c273e;
+    background: linear-gradient(135deg, #FC466B 0%, #3F5EFB 100%);
+    border: 2px solid rgb(9, 7, 7);
     width: 80%;
     font-weight: bolder;
-    color: #70e7e7;
+    color: #000000;
 }
 
 .academics .academics-graph .Semester:hover 
 {
     transform: scale(1.1);
     box-shadow: 1px 1px 10px rgb(254, 143, 162);
-    color: rgb(230, 114, 219);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    background: linear-gradient(135deg, #3F2B96 0%, #A8C0FF 100%);
+
+
 }
 .lets-connect
 {
@@ -682,14 +687,15 @@ body
     width: 100%;
     height: 300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 150px;
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 480px) {
     .lets-connect  .connection-profiles
     {
-        gap: 40px;
+        gap: 10px;
     }
 }
 .lets-connect  i
@@ -708,7 +714,7 @@ body
     font-size: xx-large;
     text-align: center;
     text-decoration: underline;
-    color: #ffacd7;
+    color: #a1f9ff;
 }
 @media screen and (max-width: 508px) {
     .lets-connect .email-section
@@ -739,6 +745,7 @@ body
 {
     transform: scale(1.07);
     box-shadow: 2px 2px 3px solid rgb(255, 124, 181);
+    cursor: pointer;
 }
 .lets-connect .connection-profiles  #github:hover
 {

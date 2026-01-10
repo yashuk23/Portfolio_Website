@@ -1,9 +1,8 @@
-html
-{
+html {
     scroll-behavior: smooth;
 }
-body
-{
+
+body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -14,17 +13,16 @@ body
     color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 
 #skills-section,
 #projects-section,
-#academics-section
-{
-    scroll-margin-top: 140px; 
+#academics-section {
+    scroll-margin-top: 140px;
 }
 
-.navbar
-{
+.navbar {
     position: sticky;
     top: 0;
     left: 0;
@@ -48,8 +46,7 @@ body
     padding: 0 0 0 0;
 }
 
-.navbar-name
-{
+.navbar-name {
     display: flex;
     align-items: first baseline;
     justify-content: center;
@@ -59,8 +56,7 @@ body
     background-color: #000112;
 }
 
-.navbar-name p 
-{
+.navbar-name p {
     font-weight: bolder;
     font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -69,8 +65,7 @@ body
     color: rgb(252, 252, 252);
 }
 
-.navbar-name p:hover
-{
+.navbar-name p:hover {
     cursor: pointer;
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
@@ -78,8 +73,7 @@ body
     transform: scale(1.5);
 }
 
-.navbar-menu
-{
+.navbar-menu {
     display: flex;
     justify-content: center;
     background-color: #000112;
@@ -91,8 +85,7 @@ body
     gap: 50px;
 }
 
-@media screen and (max-width: 755px)
-{
+@media screen and (max-width: 755px) {
     .navbar-menu {
         gap: 20px;
     }
@@ -247,24 +240,23 @@ body
     border-radius: 10px;
     border: 3px solid rgb(142, 247, 249);
 }
+
 .hero .hero-text .hero-text-content .resume-button:hover {
     transform: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
     background: #36e3e3;
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
-        border: 3px solid rgb(130, 9, 52);
+    border: 3px solid rgb(130, 9, 52);
 
-} 
+}
 
-.skills
-{
+.skills {
     margin-top: 200px;
     margin-bottom: 250px;
 }
 
-.skills .skills-name h1
-{
+.skills .skills-name h1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,8 +270,7 @@ body
     max-height: 50%;
 }
 
-.skills .skills-name h1:hover
-{
+.skills .skills-name h1:hover {
 
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
@@ -287,8 +278,7 @@ body
     transform: scale(1.05);
 }
 
-.skills .skills-btns
-{
+.skills .skills-btns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,8 +286,7 @@ body
     flex-wrap: wrap;
 }
 
-.skills .skills-btns button
-{
+.skills .skills-btns button {
     font-size: 1.5rem;
     font-weight: lighter;
     height: 50px;
@@ -339,15 +328,22 @@ body
     text-align: center;
     max-height: 50%;
 }
- .coding-profiles .coding-profiles-btns 
- {
+
+.skills .coding-profiles p:hover {
+    background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.05);
+}
+
+.coding-profiles .coding-profiles-btns {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
- }
-.coding-profiles .coding-profiles-btns .profile-container
-{
+}
+
+.coding-profiles .coding-profiles-btns .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -358,16 +354,16 @@ body
     background-color: #000612;
     color: white;
     border: 2px solid rgb(9, 238, 200);
-    
+
 }
-.coding-profiles .coding-profiles-btns .profile-container:hover
-{
+
+.coding-profiles .coding-profiles-btns .profile-container:hover {
     box-shadow: 2px 2px 8px #4facfe;
     transform: scale(1.05);
     transition-delay: 1ms;
 }
-.coding-profiles .coding-profiles-btns .profile-container .leetcode-img
-{
+
+.coding-profiles .coding-profiles-btns .profile-container .leetcode-img {
     width: 100%;
     height: 70%;
     border-radius: 10px 10px 0 0;
@@ -378,8 +374,7 @@ body
     background-repeat: no-repeat;
 }
 
-.coding-profiles .coding-profiles-btns .profile-container .gfg-img
-{
+.coding-profiles .coding-profiles-btns .profile-container .gfg-img {
     width: 100%;
     background-color: #000112;
     background-image: url("./gfg.png");
@@ -389,8 +384,8 @@ body
     height: 70%;
     border-radius: 10px 10px 0 0;
 }
-.coding-profiles .coding-profiles-btns .profile-container button
-{
+
+.coding-profiles .coding-profiles-btns .profile-container button {
     font-weight: lighter;
     height: 35px;
     width: 120px;
@@ -404,8 +399,8 @@ body
     color: white;
     border: 2px solid rgb(9, 238, 200)
 }
-.coding-profiles .coding-profiles-btns .profile-container button:hover
-{
+
+.coding-profiles .coding-profiles-btns .profile-container button:hover {
     cursor: pointer;
     transform: scale(1.05);
     transition-delay: 1ms;
@@ -413,6 +408,7 @@ body
     background: linear-gradient(90deg, rgba(77, 71, 161, 1) 0%, rgba(255, 201, 201, 1) 51%, rgba(42, 180, 201, 1) 100%);
     color: #020617;
 }
+
 @media screen and (max-width: 700px) {
     .skills .coding-profiles .coding-profiles-btns {
         gap: 40px;
@@ -532,11 +528,12 @@ body
     color: white;
     border-radius: 0 0 10px 10px;
 }
-.projects .project-box-container .project-box .project-box-btns .resume-button
-{
+
+.projects .project-box-container .project-box .project-box-btns .resume-button {
     display: flex;
-    
+
 }
+
 .projects .project-box-container .project-box .project-box-btns button {
     font-size: 1rem;
     font-weight: lighter;
@@ -557,14 +554,12 @@ body
     color: rgb(0, 6, 31)
 }
 
-.academics 
-{
+.academics {
     margin-top: 250px;
     margin-bottom: 200px;
 }
 
-.academics .academics-header
-{
+.academics .academics-header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,15 +572,14 @@ body
     text-align: center;
     max-height: 50%;
 }
-.academics .academics-header:hover
-{
+
+.academics .academics-header:hover {
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academics-name 
-{
+.academics .academics-name {
     font-size: 2rem;
     text-align: center;
     margin-top: 80px;
@@ -595,8 +589,7 @@ body
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year 
-{
+.academics .academic-year {
     font-size: 2rem;
     text-align: center;
     font-weight: bolder;
@@ -605,24 +598,20 @@ body
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year:hover 
-{
+.academics .academic-year:hover {
     transform: scale(1.05);
 }
 
-.academics .academics-name:hover 
-{
+.academics .academics-name:hover {
     transform: scale(1.05);
 }
 
-.academics .academics-header:hover 
-{
+.academics .academics-header:hover {
     color: rgb(255, 255, 255);
     transform: scale(1.05);
 }
 
-.academics .academics-graph 
-{
+.academics .academics-graph {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -631,8 +620,7 @@ body
     gap: 30px;
 }
 
-.academics .academics-graph .Semester 
-{
+.academics .academics-graph .Semester {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -647,8 +635,7 @@ body
     color: #000000;
 }
 
-.academics .academics-graph .Semester:hover 
-{
+.academics .academics-graph .Semester:hover {
     transform: scale(1.1);
     box-shadow: 1px 1px 10px rgb(254, 143, 162);
     color: rgb(255, 255, 255);
@@ -657,14 +644,15 @@ body
 
 
 }
-.lets-connect
-{
+
+.lets-connect {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
 .lets-connect .lets-connect-header {
     display: flex;
     justify-content: center;
@@ -678,15 +666,15 @@ body
     text-align: center;
     max-height: 50%;
 }
-.lets-connect .lets-connect-header:hover
-{
+
+.lets-connect .lets-connect-header:hover {
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
-.lets-connect  .connection-profiles
-{
+
+.lets-connect .connection-profiles {
     width: 100%;
     height: 300px;
     display: flex;
@@ -695,43 +683,43 @@ body
     flex-wrap: wrap;
     gap: 150px;
 }
+
 @media screen and (max-width: 480px) {
-    .lets-connect  .connection-profiles
-    {
+    .lets-connect .connection-profiles {
         gap: 10px;
     }
 }
-.lets-connect  i
-{
+
+.lets-connect i {
     color: rgb(62, 143, 218);
     font-size: 25px;
 }
+
 @media screen and (max-width: 508px) {
-    .lets-connect  i
-    {
+    .lets-connect i {
         font-size: medium;
     }
 }
-.lets-connect .email-section
-{
+
+.lets-connect .email-section {
     font-size: xx-large;
     text-align: center;
-    text-decoration:solid;
+    text-decoration: solid;
     color: #a1f9ff;
 }
+
 @media screen and (max-width: 508px) {
-    .lets-connect .email-section
-    {
-        font-size:23px;
+    .lets-connect .email-section {
+        font-size: 23px;
     }
 }
-.lets-connect .email-section:hover
-{
+
+.lets-connect .email-section:hover {
     transform: scale(1.07);
     cursor: pointer;
 }
-.lets-connect .connection-profiles  #github
-{
+
+.lets-connect .connection-profiles #github {
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -743,21 +731,20 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-} 
-.lets-connect .connection-profiles :hover
-{
+}
+
+.lets-connect .connection-profiles :hover {
     transform: scale(1.07);
     box-shadow: 2px 2px 3px solid rgb(255, 124, 181);
     cursor: pointer;
 }
-.lets-connect .connection-profiles  #github:hover
-{
+
+.lets-connect .connection-profiles #github:hover {
     transform: scale(1.07);
     background-color: #4f80b5;
 }
 
-.lets-connect .connection-profiles  #linkedin
-{
+.lets-connect .connection-profiles #linkedin {
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -769,15 +756,14 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-} 
-.lets-connect .connection-profiles  #linkedin:hover
-{
+}
+
+.lets-connect .connection-profiles #linkedin:hover {
     transform: scale(1.07);
     background-color: #4f80b5;
 }
 
-.lets-connect .connection-profiles  #gmail
-{
+.lets-connect .connection-profiles #gmail {
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -789,18 +775,18 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-} 
-.lets-connect .connection-profiles 
-{
+}
+
+.lets-connect .connection-profiles {
     transform: scale(1.07);
 }
-.lets-connect .connection-profiles  #gmail:hover
-{
+
+.lets-connect .connection-profiles #gmail:hover {
     transform: scale(1.07);
     background-color: #4f80b5;
 }
-.lets-connect .connection-profiles  i
-{
+
+.lets-connect .connection-profiles i {
     font-size: 40px;
     color: white;
 }

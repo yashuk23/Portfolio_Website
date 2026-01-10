@@ -48,7 +48,7 @@ brandpage_demo.addEventListener("click", () => {
 
 let connect_mail = document.querySelector('.lets-connect .email-section');
 connect_mail.addEventListener("click", () => {
-     window.location.href ="mailto:yashkanawade66@gmail.com.com?subject=Contact from Portfolio&body=Hello Yash, I visited your portfolio!";
+     window.location.href ="mailto:yashkanawade66@gmail.com?subject=Contact from Portfolio&body=Hello Yash, I visited your portfolio!";
 });
 
 let connect_github = document.querySelector('#github');

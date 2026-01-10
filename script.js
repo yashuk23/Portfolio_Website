@@ -65,4 +65,3 @@ let message = document.querySelector('.lets-connect #gmail');
 message.addEventListener("click", () => {
     window.location.href = "mailto:yashkanawade66@gmail.com"
 });
-

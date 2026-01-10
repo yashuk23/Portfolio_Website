@@ -2,7 +2,91 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* Animations are taken from google*/
+/*start*/
+.bg-blur-container 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background: transparent;
+    pointer-events: none;
+}
+
+.blob 
+{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(111, 241, 236, 0.15) 0%, rgba(79, 172, 254, 0.1) 100%);
+    filter: blur(80px);
+    border-radius: 50%;
+    z-index: -1;
+    animation: move 25s infinite alternate ease-in-out;
+}
+
+.blob-1 
+{
+    top: -10%;
+    left: -10%;
+    background: rgba(111, 241, 236, 0.12);
+}
+
+.blob-2 
+{
+    bottom: -10%;
+    right: -10%;
+    background: rgba(247, 143, 188, 0.1);
+    Pink hint from your text-hover animation-duration: 30s;
+    animation-delay: -5s;
+}
+
+.blob-3 
+{
+    top: 40%;
+    left: 30%;
+    width: 300px;
+    height: 300px;
+    background: rgba(63, 94, 251, 0.08);
+    animation-duration: 20s;
+    animation-delay: -2s;
+}
+
+@keyframes move 
+{
+    0% {
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(10vw, 20vh) scale(1.2) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(-5vw, 15vh) scale(0.8) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1) rotate(360deg);
+    }
+}
+
+body 
+{
+    background:
+        radial-gradient(circle at top left, rgba(7, 20, 36, 0.9), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(2, 6, 23, 0.9), transparent 45%),
+        linear-gradient(135deg, #020617, #040b1d);
+}
+
+/*end*/
+
+body 
+{
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -14,15 +98,16 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 
 #skills-section,
 #projects-section,
-#academics-section {
+#academics-section 
+{
     scroll-margin-top: 140px;
 }
 
-.navbar {
+.navbar 
+{
     position: sticky;
     top: 0;
     left: 0;
@@ -46,7 +131,8 @@ body {
     padding: 0 0 0 0;
 }
 
-.navbar-name {
+.navbar-name 
+{
     display: flex;
     align-items: first baseline;
     justify-content: center;
@@ -56,7 +142,8 @@ body {
     background-color: #000112;
 }
 
-.navbar-name p {
+.navbar-name p 
+{
     font-weight: bolder;
     font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -65,7 +152,8 @@ body {
     color: rgb(252, 252, 252);
 }
 
-.navbar-name p:hover {
+.navbar-name p:hover 
+{
     cursor: pointer;
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
@@ -73,7 +161,8 @@ body {
     transform: scale(1.5);
 }
 
-.navbar-menu {
+.navbar-menu 
+{
     display: flex;
     justify-content: center;
     background-color: #000112;
@@ -85,13 +174,16 @@ body {
     gap: 50px;
 }
 
-@media screen and (max-width: 755px) {
-    .navbar-menu {
+@media screen and (max-width: 755px) 
+{
+    .navbar-menu 
+    {
         gap: 20px;
     }
 }
 
-.navbar-menu a {
+.navbar-menu a 
+{
     font-size: x-large;
     font-weight: bolder;
     font-display: fallback;
@@ -102,7 +194,8 @@ body {
 
 
 
-.navbar-menu a:hover {
+.navbar-menu a:hover 
+{
     cursor: pointer;
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
@@ -110,7 +203,8 @@ body {
     transform: scale(1.05);
 }
 
-.hero {
+.hero 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +216,8 @@ body {
     margin-bottom: 420px;
 }
 
-.hero-img {
+.hero-img 
+{
     height: 250px;
     width: 250px;
     border-radius: 100%;
@@ -134,19 +229,22 @@ body {
     background-repeat: no-repeat;
 }
 
-.hero-img:hover {
+.hero-img:hover 
+{
     box-shadow: 1px 1px 10px rgb(141, 251, 251);
     transform: scale(1.05);
     cursor: pointer;
     transition-delay: 1ms;
 }
 
-.hero-text {
+.hero-text 
+{
     height: 250px;
     width: 350px;
 }
 
-.hero-text .hero-text-content {
+.hero-text .hero-text-content 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,13 +253,15 @@ body {
     padding: 0 0 0 10px;
 }
 
-.hero-text .hero-text-content:hover {
+.hero-text .hero-text-content:hover 
+{
     transform: scale(1.05);
     cursor: none;
     color: rgb(255, 255, 255);
 }
 
-.hero-text .hero-text-content .yash {
+.hero-text .hero-text-content .yash 
+{
     font-size: 4rem;
     font-weight: bold;
     line-height: 1;
@@ -190,7 +290,8 @@ body {
     transition: all 0.1s ease;
 }
 
-.hero-text .hero-text-content .yash:hover {
+.hero-text .hero-text-content .yash:hover 
+{
     text-shadow:
         0 0 7px #fff,
         0 0 15px #00f2ff,
@@ -200,13 +301,15 @@ body {
 }
 
 
-.hero .hero-text .hero-text-content .bottom-text {
+.hero .hero-text .hero-text-content .bottom-text 
+{
     font-size: 1.3rem;
     max-width: 300px;
     line-height: 1.4;
 }
 
-.bottom-text {
+.bottom-text 
+{
     max-width: 272px;
     text-align: center;
     display: flex;
@@ -216,13 +319,15 @@ body {
     flex-wrap: wrap;
 }
 
-.bottom-text p {
+.bottom-text p 
+{
     padding: 2px;
     line-height: 0.1px;
     font-size: 1rem;
 }
 
-.hero .hero-text .hero-text-content .resume-button {
+.hero .hero-text .hero-text-content .resume-button 
+{
     margin-top: 5px;
     max-height: 10vh;
     width: 140px;
@@ -241,7 +346,8 @@ body {
     border: 3px solid rgb(142, 247, 249);
 }
 
-.hero .hero-text .hero-text-content .resume-button:hover {
+.hero .hero-text .hero-text-content .resume-button:hover 
+{
     transform: none;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -251,12 +357,14 @@ body {
 
 }
 
-.skills {
+.skills 
+{
     margin-top: 200px;
     margin-bottom: 250px;
 }
 
-.skills .skills-name h1 {
+.skills .skills-name h1 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -270,7 +378,8 @@ body {
     max-height: 50%;
 }
 
-.skills .skills-name h1:hover {
+.skills .skills-name h1:hover 
+{
 
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
@@ -286,7 +395,8 @@ body {
     flex-wrap: wrap;
 }
 
-.skills .skills-btns button {
+.skills .skills-btns button 
+{
     font-size: 1.5rem;
     font-weight: lighter;
     height: 50px;
@@ -302,7 +412,8 @@ body {
     border: 2px solid rgb(9, 238, 200)
 }
 
-.skills .skills-btns button:hover {
+.skills .skills-btns button:hover 
+{
     box-shadow: 2px 2px 8px #4facfe;
     transform: scale(1.05);
     transition-delay: 1ms;
@@ -311,11 +422,13 @@ body {
     color: #020617;
 }
 
-.skills .coding-profiles {
+.skills .coding-profiles 
+{
     margin-top: 100px;
 }
 
-.skills .coding-profiles p {
+.skills .coding-profiles p 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,21 +442,24 @@ body {
     max-height: 50%;
 }
 
-.skills .coding-profiles p:hover {
+.skills .coding-profiles p:hover 
+{
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
-.coding-profiles .coding-profiles-btns {
+.coding-profiles .coding-profiles-btns 
+{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.coding-profiles .coding-profiles-btns .profile-container {
+.coding-profiles .coding-profiles-btns .profile-container 
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,13 +473,15 @@ body {
 
 }
 
-.coding-profiles .coding-profiles-btns .profile-container:hover {
+.coding-profiles .coding-profiles-btns .profile-container:hover 
+{
     box-shadow: 2px 2px 8px #4facfe;
     transform: scale(1.05);
     transition-delay: 1ms;
 }
 
-.coding-profiles .coding-profiles-btns .profile-container .leetcode-img {
+.coding-profiles .coding-profiles-btns .profile-container .leetcode-img 
+{
     width: 100%;
     height: 70%;
     border-radius: 10px 10px 0 0;
@@ -374,7 +492,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.coding-profiles .coding-profiles-btns .profile-container .gfg-img {
+.coding-profiles .coding-profiles-btns .profile-container .gfg-img 
+{
     width: 100%;
     background-color: #000112;
     background-image: url("./gfg.png");
@@ -385,7 +504,8 @@ body {
     border-radius: 10px 10px 0 0;
 }
 
-.coding-profiles .coding-profiles-btns .profile-container button {
+.coding-profiles .coding-profiles-btns .profile-container button 
+{
     font-weight: lighter;
     height: 35px;
     width: 120px;
@@ -400,7 +520,8 @@ body {
     border: 2px solid rgb(9, 238, 200)
 }
 
-.coding-profiles .coding-profiles-btns .profile-container button:hover {
+.coding-profiles .coding-profiles-btns .profile-container button:hover 
+{
     cursor: pointer;
     transform: scale(1.05);
     transition-delay: 1ms;
@@ -409,19 +530,23 @@ body {
     color: #020617;
 }
 
-@media screen and (max-width: 700px) {
-    .skills .coding-profiles .coding-profiles-btns {
+@media screen and (max-width: 700px) 
+{
+    .skills .coding-profiles .coding-profiles-btns 
+    {
         gap: 40px;
     }
 }
 
-.projects {
+.projects 
+{
     margin-top: 200px;
     width: 100vw;
     min-height: 500px;
 }
 
-.projects .project-header {
+.projects .project-header 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,14 +560,16 @@ body {
     max-height: 50%;
 }
 
-.projects .project-header:hover {
+.projects .project-header:hover 
+{
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
-.projects .project-box-container {
+.projects .project-box-container 
+{
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -450,13 +577,16 @@ body {
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 680px) {
-    .projects .project-box-container {
+@media screen and (max-width: 680px) 
+{
+    .projects .project-box-container 
+    {
         gap: 90px;
     }
 }
 
-.projects .project-box-container .project-box {
+.projects .project-box-container .project-box 
+{
     height: 400px;
     width: 300px;
     background-color: white;
@@ -467,18 +597,21 @@ body {
     overflow: hidden;
 }
 
-.projects .project-box-container .project-box:hover {
+.projects .project-box-container .project-box:hover 
+{
     box-shadow: 1px 1px 15px #36e3e3;
 }
 
-.projects .project-box-container .project-box .project-box-img {
+.projects .project-box-container .project-box .project-box-img 
+{
     width: 100%;
     height: 45%;
     background-color: #172033;
     border-radius: 10px 10px 0 0;
 }
 
-.projects .project-box-container .project-box .project-box-img img {
+.projects .project-box-container .project-box .project-box-img img 
+{
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -489,7 +622,8 @@ body {
     border-radius: 9px 9px 0 0;
 }
 
-.projects .project-box-container .project-box .project-box-content {
+.projects .project-box-container .project-box .project-box-content 
+{
     width: 100%;
     max-height: 30%;
     background-color: #172033;
@@ -501,7 +635,8 @@ body {
     text-align: center;
 }
 
-.projects .project-box-container .project-box .project-box-content {
+.projects .project-box-container .project-box .project-box-content 
+{
     width: 100%;
     max-height: 30%;
     background-color: #172033;
@@ -513,13 +648,15 @@ body {
     text-align: center;
 }
 
-.projects .project-box-container .project-box .project-box-content p {
+.projects .project-box-container .project-box .project-box-content p 
+{
     text-align: center;
     font-size: 1.2rem;
     color: #8ba4f6;
 }
 
-.projects .project-box-container .project-box .project-box-btns {
+.projects .project-box-container .project-box .project-box-btns 
+{
     height: 100px;
     display: flex;
     align-items: center;
@@ -529,12 +666,14 @@ body {
     border-radius: 0 0 10px 10px;
 }
 
-.projects .project-box-container .project-box .project-box-btns .resume-button {
+.projects .project-box-container .project-box .project-box-btns .resume-button 
+{
     display: flex;
 
 }
 
-.projects .project-box-container .project-box .project-box-btns button {
+.projects .project-box-container .project-box .project-box-btns button 
+{
     font-size: 1rem;
     font-weight: lighter;
     height: 50px;
@@ -545,7 +684,8 @@ body {
     border: 2px solid rgb(9, 238, 200)
 }
 
-.projects .project-box-container .project-box .project-box-btns button:hover {
+.projects .project-box-container .project-box .project-box-btns button:hover 
+{
     cursor: pointer;
     transform: scale(1.05);
     transition-delay: 1ms;
@@ -554,12 +694,14 @@ body {
     color: rgb(0, 6, 31)
 }
 
-.academics {
+.academics 
+{
     margin-top: 250px;
     margin-bottom: 200px;
 }
 
-.academics .academics-header {
+.academics .academics-header 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,13 +715,15 @@ body {
     max-height: 50%;
 }
 
-.academics .academics-header:hover {
+.academics .academics-header:hover 
+{
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academics-name {
+.academics .academics-name 
+{
     font-size: 2rem;
     text-align: center;
     margin-top: 80px;
@@ -589,7 +733,8 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year {
+.academics .academic-year 
+{
     font-size: 2rem;
     text-align: center;
     font-weight: bolder;
@@ -598,20 +743,24 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.academics .academic-year:hover {
+.academics .academic-year:hover 
+{
     transform: scale(1.05);
 }
 
-.academics .academics-name:hover {
+.academics .academics-name:hover 
+{
     transform: scale(1.05);
 }
 
-.academics .academics-header:hover {
+.academics .academics-header:hover 
+{
     color: rgb(255, 255, 255);
     transform: scale(1.05);
 }
 
-.academics .academics-graph {
+.academics .academics-graph 
+{
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -620,7 +769,8 @@ body {
     gap: 30px;
 }
 
-.academics .academics-graph .Semester {
+.academics .academics-graph .Semester 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,17 +785,17 @@ body {
     color: #000000;
 }
 
-.academics .academics-graph .Semester:hover {
+.academics .academics-graph .Semester:hover 
+{
     transform: scale(1.1);
     box-shadow: 1px 1px 10px rgb(254, 143, 162);
     color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
     background: linear-gradient(135deg, #3F2B96 0%, #A8C0FF 100%);
-
-
 }
 
-.lets-connect {
+.lets-connect 
+{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -653,7 +803,8 @@ body {
     gap: 20px;
 }
 
-.lets-connect .lets-connect-header {
+.lets-connect .lets-connect-header 
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -667,14 +818,16 @@ body {
     max-height: 50%;
 }
 
-.lets-connect .lets-connect-header:hover {
+.lets-connect .lets-connect-header:hover 
+{
     background: radial-gradient(circle, rgb(247, 143, 188) 0%, rgb(161, 195, 234) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.05);
 }
 
-.lets-connect .connection-profiles {
+.lets-connect .connection-profiles 
+{
     width: 100%;
     height: 300px;
     display: flex;
@@ -684,42 +837,52 @@ body {
     gap: 150px;
 }
 
-@media screen and (max-width: 480px) {
-    .lets-connect .connection-profiles {
+@media screen and (max-width: 480px) 
+{
+    .lets-connect .connection-profiles 
+    {
         gap: 10px;
     }
 }
 
-.lets-connect i {
+.lets-connect i 
+{
     color: rgb(62, 143, 218);
     font-size: 25px;
 }
 
-@media screen and (max-width: 508px) {
-    .lets-connect i {
+@media screen and (max-width: 508px) 
+{
+    .lets-connect i 
+    {
         font-size: medium;
     }
 }
 
-.lets-connect .email-section {
+.lets-connect .email-section 
+{
     font-size: xx-large;
     text-align: center;
     text-decoration: solid;
     color: #a1f9ff;
 }
 
-@media screen and (max-width: 508px) {
-    .lets-connect .email-section {
+@media screen and (max-width: 508px) 
+{
+    .lets-connect .email-section 
+    {
         font-size: 23px;
     }
 }
 
-.lets-connect .email-section:hover {
+.lets-connect .email-section:hover 
+{
     transform: scale(1.07);
     cursor: pointer;
 }
 
-.lets-connect .connection-profiles #github {
+.lets-connect .connection-profiles #github 
+{
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -733,18 +896,21 @@ body {
     align-items: center;
 }
 
-.lets-connect .connection-profiles :hover {
+.lets-connect .connection-profiles :hover 
+{
     transform: scale(1.07);
     box-shadow: 2px 2px 3px solid rgb(255, 124, 181);
     cursor: pointer;
 }
 
-.lets-connect .connection-profiles #github:hover {
+.lets-connect .connection-profiles #github:hover 
+{
     transform: scale(1.07);
     background-color: #4f80b5;
 }
 
-.lets-connect .connection-profiles #linkedin {
+.lets-connect .connection-profiles #linkedin 
+{
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -758,12 +924,14 @@ body {
     align-items: center;
 }
 
-.lets-connect .connection-profiles #linkedin:hover {
+.lets-connect .connection-profiles #linkedin:hover 
+{
     transform: scale(1.07);
     background-color: #4f80b5;
 }
 
-.lets-connect .connection-profiles #gmail {
+.lets-connect .connection-profiles #gmail 
+{
     width: 100px;
     height: 100px;
     background-color: #1c273e;
@@ -777,16 +945,19 @@ body {
     align-items: center;
 }
 
-.lets-connect .connection-profiles {
+.lets-connect .connection-profiles 
+{
     transform: scale(1.07);
 }
 
-.lets-connect .connection-profiles #gmail:hover {
+.lets-connect .connection-profiles #gmail:hover 
+{
     transform: scale(1.07);
     background-color: #4f80b5;
 }
 
-.lets-connect .connection-profiles i {
+.lets-connect .connection-profiles i 
+{
     font-size: 40px;
     color: white;
 }

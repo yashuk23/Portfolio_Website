@@ -65,19 +65,3 @@ let message = document.querySelector('.lets-connect #gmail');
 message.addEventListener("click", () => {
     window.location.href = "mailto:yashkanawade66@gmail.com"
 });
-
-//animation are taken from google 
-if (window.matchMedia("(pointer: fine)").matches) {
-    window.addEventListener('mousemove', (e) => {
-        const xPos = (e.clientX / window.innerWidth) - 0.5;
-        const yPos = (e.clientY / window.innerHeight) - 0.5;
-
-        const xMove = xPos * 60; 
-        const yMove = yPos * 60;
-        const zRotate = xPos * 5;
-
-        if (grid) {
-            grid.style.transform = `rotateX(60deg) rotateZ(${zRotate}deg) translateX(${xMove}px) translateY(${yMove}px)`;
-        }
-    });
-}
